@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Grosse Gasthaus</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .mybody {
+            
+            font-family: "Open Sans", sans-serif;
+            margin: 1%;
+            box-shadow: 0px 0px 180px 100px rgb(87, 83, 38);
+            background: rgba(128, 128, 128, 0.336);
+            text-shadow: #614906 1px 1px 2px;
+            position: relative;
+            z-index: 1;
+            
+        }
+
+        .modul_bild {
+            margin-top: 0;
+            /* filter: blur(2.5px); Wahr ein Test */
+            filter: blur(0.1rem);
+            width: 100%;
+            border-radius: 0px 0px 20px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.829);
+            margin-bottom: 20px;
+            display: block;
+            position: relative ;
+        }
+
+        .topfooter {
+            text-align: center;
+            color: #614906;
+            margin: 20px 0 0 0;
+            padding: 10px;
+            box-shadow: 2px 2px 100px 500px rgb(199, 187, 81);
+            border-radius: 20px 20px 0px 0px;
+            border: black 2px solid;
+            z-index: 2;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .maps {
+            display: block;
+            margin: 20px auto 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.829);
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .tableone {
+            background: rgba(255, 255, 255, 0.596);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.829);
+            margin-bottom: 20px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-shadow: #614906 1px 1px 2px;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .tabletow {
+            background: rgba(255, 255, 255, 0.596);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.829);
+            margin-top: 50px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-shadow: #614906 1px 1px 2px;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .mapscontainer {
+            background: rgba(255, 255, 255, 0.596);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.829);
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: #614906 1px 1px 2px;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+        
+
+        .kontakt_container {
+            background: rgba(255, 255, 255, 0.596);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.829);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: #614906 1px 1px 2px;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .footer_container {
+            background: rgba(95, 90, 14, 0.644);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.829);
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            text-shadow: #cfcdc5 1px 1px 2px;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .footerclass {
+            color: rgb(14, 13, 11);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footerclass:hover {
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .navigation_top {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .navclass {
+            color: rgba(14, 13, 13, 0.986);
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            filter: drop-shadow(2px 2px 1px rgba(165, 158, 158, 0.877));
+            background-color: #b18714;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+        }
+
+        .navclass:hover {
+            text-decoration: none;
+            font-weight: bold;
+            filter: drop-shadow(2px 2px 4px rgba(165, 158, 158, 0.877));
+        }
+    </style>
+</head>
+<body class="mybody">
+    <div class="navigation_top">
+        <Nav>
+            <a class="navclass" href="index.html">Startseite |</a>
+            <a class="navclass" href="#speisekarte">| Speisekarte |</a>
+            <a class="navclass" href="#oeffnung">| Öffnungszeiten |</a>
+            <a class="navclass" href="#anfahrt">| Anfahrt |</a>
+        </Nav>
+    </div>
+
+    <h1 class="topfooter" >Das Grosse Gasthaus</h1>
+    <img class="modul_bild" src="./img/modul_bild.png" alt="Das Grosse Gasthaus">
+
+
+    <div class="tableone">  
+        <p>Willkommen im Grossen Gasthaus! Hier finden Sie eine Vielzahl von köstlichen Gerichten und erfrischenden Getränken, die Ihren Aufenthalt unvergesslich machen.</p>
+        <h2 id="oeffnung">Unsere Öffnungszeiten</h2>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Öffnungszeiten</th>
+            </tr>
+            <tr>
+                <td>Montag - Freitag</td>
+                <td>11:00 - 22:00</td>
+            </tr>
+            <tr>
+                <td>Samstag</td>
+                <td>12:00 - 23:00</td>
+            </tr>
+            <tr>
+                <td>Sonntag</td>
+                <td>12:00 - 21:00</td>
+            </tr>
+        </table>
+    </div>
+<!-- New Section Anfahrt -->
+    <div class="mapscontainer">
+        <h2 id="anfahrt">Anfahrt</h2>
+        Unsere Adresse ist Musterstraße 123, 12345 Musterstadt. <br>
+        <iframe  class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d517.9793921511384!2d10.861013789642408!3d49.13503202827767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1769801566794!5m2!1sde!2sde" width="50%" height="200" style="border:5px solid rgba(209, 159, 65, 0.459);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<!-- New Section Tageskarte -->
+    <div class="tabletow">
+        <h2 id="speisekarte">Tageskarte</h2>
+            <table>
+            <tr>
+                <td>1</td>
+                <td>Gulasch</td>
+                <td>4,99,- €</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bauerntop</td>
+                <td>6,99,- €</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pilz</td>
+                <td>3,99,- €</td>
+            </tr>
+        </table>
+          Tageskarte <a class="footerclass" href="./downloads/Tageskarte.pdf" target="_blank">Downloaden</a> 
+    </div>   
+
+<!-- New Section Kontakt -->
+    <div class="kontakt_container">
+        <h2>Kontakt</h2>
+        So erreichen Sie uns: <br>
+        Telefon: <a class="footerclass" href="tel:01234567890">01234 567890</a> <br>
+        E-Mail: <a class="footerclass" href="mailto:mustermannfirma@example.com">mustermannfirma@example.com</a></a>
+    </div>
+<!-- New Section Footer -->
+    <div class="footer_container">
+        <footer>
+            <p>&copy; 2024 Das Grosse Gasthaus. Alle Rechte vorbehalten.</p>
+            <a class="footerclass" href="impressum.html">Impressum |</a>
+            <a class="footerclass" href="Datenschutz.html">| Datenschutz</a>
+        </footer>
+    </div>
+</body>
+</html>
